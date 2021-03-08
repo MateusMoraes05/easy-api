@@ -5,6 +5,6 @@ export default function apiHelper(url) {
         cache: 'default'
     }
     fetch(url, fetchProps)
-    .then(response => {response.json().then( data => console.log(data))})
+    .then(response => {response.json().then( data => {return data})})
     .catch((e) => {console.log(`Erro: ${e}`)})
 }
