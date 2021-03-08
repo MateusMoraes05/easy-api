@@ -5,7 +5,7 @@ export default function apiHelper(url) {
         mode: 'cors',
         cache: 'default'
     }
-    fetch(url, apiHelper)
+    fetch(url, fetchProps)
     .then(response => {response.json().then( data => console.log(data))})
     .catch((e) => {console.log(`Erro: ${e}`)})
 }
