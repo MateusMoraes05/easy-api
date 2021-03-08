@@ -1,4 +1,3 @@
-
 export default function apiHelper(url) {
     const fetchProps = {
         method: 'GET',
